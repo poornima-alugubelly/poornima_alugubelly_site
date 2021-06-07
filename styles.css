@@ -194,17 +194,17 @@ hr {
   }
 
   /* slide in from right */
-.even{
+/* .even{
     animation: slideInRight; 
     animation-duration: 1s;
-}
+} */
 
 /* slide in from left */
 
-.odd{
+/* .odd{
     animation: slideInLeft; 
     animation-duration: 1s;
-  }
+  } */
   
   /* On mouse-over, add a deeper shadow */
   .link:hover {
