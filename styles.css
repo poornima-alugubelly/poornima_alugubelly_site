@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
+
 :root {
     --primary-color: #111827;
     --off-white: #F3F4F6;
@@ -167,17 +168,38 @@ hr {
     padding-bottom: 6rem;
 }
 
-.card {
+.card{
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     background-color: var(--off-white);
+   
+  }
+.even{
+    animation: slideInRight; 
+    animation-duration: 1s;
+}
+
+
+  .card{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: var(--off-white);
+
+  }
+
+  .odd{
+    animation: slideInLeft; 
+  animation-duration: 1s;
   }
   
   /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .link:hover {
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  
   
   /* Add some padding inside the card container */
   .container {
