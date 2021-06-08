@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home | poornima-alugubelly</title>
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.documentElement.setAttribute("data-theme", "light");
+        });
+
+          </script>
     <link href="styles.css" rel="stylesheet" />
+  
+          
     <script src="https://kit.fontawesome.com/9a72b9b558.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
 
 </head>
 <body>
@@ -25,6 +34,7 @@
             </li>
             <li  class="list-item-inline">
                 <i id="icon" class="fa fa-solid fa-moon"></i>
+              
             </li>
         </ul>
     </nav>
@@ -80,7 +90,25 @@
             
         </ul>
     </footer>
-
+    <script>
+      
+        // Get our button switcher
+        var themeSwitcher = document.getElementById("icon");
+    
+        // When our button gets clicked
+        themeSwitcher.addEventListener("click" ,() => {
+          // Get the current selected theme, on the first run
+          // it should be `light`
+          var currentTheme = document.documentElement.getAttribute("data-theme");
+    
+          // Switch between `dark` and `light`
+          var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+    
+          // Set our currenet theme to the new one
+          document.documentElement.setAttribute("data-theme", switchToTheme);
+        });
+  
+    </script>
     <script src = "dark-mode.js"></script>
     
 </body>
