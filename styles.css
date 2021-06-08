@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
-
 :root{
     --primary-color: #111827;
     --secondary-color:white;
     --card-color: #F3F4F6;
     --text-color: black;
-
-}
+    transition: 300ms;
+} 
 
 .dark-theme{
     --primary-color: rgb(39, 36, 36);
@@ -23,6 +22,11 @@ body {
     margin: 0px;
     background-color: var(--secondary-color);
 }
+
+* {
+    transition: var(--primary-color) 1s ease, color 1s ease;
+    transition: var(--secondary-color) 1s ease, color 1s ease;
+  }
 
 hr {
     margin: 2rem 0rem;
