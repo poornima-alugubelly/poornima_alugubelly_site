@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // Wait for document to load
         document.addEventListener("DOMContentLoaded", function(event) {
           document.documentElement.setAttribute("data-theme", "light");
         });
 
+          </script> -->
+          <script>
+                let darkMode = localStorage.getItem('darkMode');
+                if (darkMode === 'enabled'){
+            localStorage.setItem('darkMode', 'enabled');
+          document.documentElement.classList.add('dark-mode');
+        }
+        
+        
           </script>
 
     <link href="styles.css" rel="stylesheet" />
