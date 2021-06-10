@@ -1,5 +1,4 @@
-// let darkMode = localStorage.getItem('darkMode'); 
-
+let darkMode = localStorage.getItem('darkMode'); 
 const darkModeToggle = document.querySelector('#icon');
 
 const enableDarkMode = () => {
