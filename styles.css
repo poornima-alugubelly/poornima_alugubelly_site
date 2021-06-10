@@ -18,6 +18,18 @@ body {
 	font-family: "Montserrat", sans-serif;
 	margin: 0px;
 	background-color: var(--secondary-color);
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* * {
