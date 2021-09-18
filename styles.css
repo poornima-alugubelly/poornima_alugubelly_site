@@ -82,6 +82,10 @@ hr {
 	margin: 1rem 1rem 1rem 0rem;
 }
 
+.link-inline {
+	display: inline;
+}
+
 /** lists **/
 
 .list-non-bullet {
